@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday Somyuu❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="bgMusic" autoplay loop>
+  <source src="assets/birthday.mp3" type="audio/mp3">
+</audio>
+
+<canvas id="confetti"></canvas>
+
+<h1>Letters for You 💌</h1>
+
+<div class="envelopes">
+  <div class="env" id="e1" onclick="openBox('letter','e1')">
+    <img src="assets/envelope.png"><p>Letter 1</p>
+  </div>
+  <div class="env" id="e2" onclick="openBox('video','e2')">
+    <img src="assets/envelope.png"><p>Letter 2</p>
+  </div>
+  <div class="env" id="e3" onclick="openBox('flowers','e3')">
+    <img src="assets/envelope.png"><p>Letter 3</p>
+  </div>
+  <div class="env" id="e4" onclick="openBox('cake','e4')">
+    <img src="assets/envelope.png"><p>Letter 4</p>
+  </div>
+</div>
+
+<!-- LETTER -->
+<div class="modal" id="letter">
+  <div class="box"><h2>💌 My Letter</h2>
+    <p>Happy Birthday my love Somyaahh ❤️<br>You are my world ✨</p>
+    <p>You are my girl and i am blessed to have you love youu babyy<br>You are so gorgeous and most beautiful on earth </p>
+    <button onclick="closeBox('letter')">Close</button>
+  </div>
+</div>
+
+<!-- VIDEO -->
+<div class="modal" id="video">
+  <div class="box"><h2>🎥 Video for You Darling </h2>
+    <video controls><source src="assets/birthday" type="video/mp4"></video>
+    <button onclick="closeBox('video')">Close</button>
+  </div>
+</div>
+
+<!-- FLOWERS -->
+<div class="modal" id="flowers">
+  <div class="box"><h2>💐 Flowers for You my Princess </h2>
+    <img src="assets/flowers.png" class="img"><p>For my princess 🌸❤️</p>
+    <button onclick="closeBox('flowers')">Close</button>
+  </div>
+</div>
+
+<!-- CAKE -->
+<div class="modal" id="cake">
+  <div class="box"><h2>🎂 Cake Cutting</h2>
+    <img src="assets/cake.png" class="img" id="cakeImg"><p>Cut cake & blow candles 🎤✨</p>
+    <button onclick="enableMic()">Blow Candles 🎤</button>
+    <button onclick="cutCake()">Cut Cake 🍰</button><br><br>
+    <button onclick="closeBox('cake')">Close</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
